@@ -7,7 +7,5 @@ services:
       - CONFIG={"settings":[{"provider":"ovh","domain":"ha.jstm.co","username":"jstm.co-node","password":"itlmnhnoc","ip_version":"ipv4"},{"provider":"ovh","domain":"portainer.jstm.co","username":"jstm.co-node","password":"itlmnhnoc","ip_version":"ipv4"},{"provider":"ovh","domain":"plex.jstm.co","username":"jstm.co-node","password":"itlmnhnoc","ip_version":"ipv4"}]}
       - PERIOD=5m
     restart: unless-stopped
-    volumes:
-      - ./data:/updater/data
     ports:
       - '8001:8000' # Para la interfaz web (opcional)
