@@ -4,7 +4,7 @@ services:
     image: qmcgaw/ddns-updater
     container_name: ddns-ovh
     environment:
-      - CONFIG={"settings":[{"provider":"ovh","domain":"ha.jstm.co","host":"*","username":"jstm.co-node","password":"itlmnhnoc","ip_version":"ipv4"},{"provider":"ovh","domain":"portainer.jstm.co","host":"*","username":"jstm.co-node","password":"itlmnhnoc","ip_version":"ipv4"},{"provider":"ovh","domain":"plex.jstm.co","host":"*","username":"jstm.co-node","password":"itlmnhnoc","ip_version":"ipv4"}]}
+      - CONFIG={"settings":[{"provider":"ovh","domain":"ha.jstm.co","username":"jstm.co-node","password":"itlmnhnoc","ip_version":"ipv4"},{"provider":"ovh","domain":"portainer.jstm.co","username":"jstm.co-node","password":"itlmnhnoc","ip_version":"ipv4"},{"provider":"ovh","domain":"plex.jstm.co","username":"jstm.co-node","password":"itlmnhnoc","ip_version":"ipv4"}]}
       - PERIOD=5m
     restart: unless-stopped
     volumes:
